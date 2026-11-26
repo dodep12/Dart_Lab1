@@ -69,6 +69,45 @@ void main() {
   
   List<String> longNames = names.where((name) => name.length > 4).toList();
   print(longNames);
+    print('\n4.1 Условия');
+  int score2 = 85;
+  String grade;
+  if (score2 >= 90) {
+    grade = 'A';
+  } else if (score2 >= 75) {
+    grade = 'B';
+  } else {
+    grade = 'C';
+  }
+  print(grade);
+  String result = score2 >= 60 ? 'Сдал' : 'Не сдал';
+  print(result);
+
+  print('\n4.2 Циклы');
+  for (int i = 0; i < 5; i++) {
+    print('For: $i');
+  }
+  int n = 0;
+  while (n < 3) {
+    print('While: $n');
+    n++;
+  }
+
+  print('\n4.3 Switch');
+  int day = 3;
+  switch (day) {
+    case 1:
+      print('Понедельник');
+      break;
+    case 2:
+      print('Вторник');
+      break;
+    case 3:
+      print('Среда');
+      break;
+    default:
+      print('Другой день');
+  }
   }
 }
 String greet(String name) {
