@@ -57,7 +57,18 @@ void main() {
   describePet(name: 'Барсик', age: 3);
   describePet(name: 'Шарик', species: 'пёс');
   print(repeat('xa')); 
-  print(repeat('xa', 3)); 
+  print(repeat('xa', 3));
+    print('\n3.5 Анонимные функции');
+  List<int> numbers = [3, 1, 4, 1, 5, 9];
+  numbers.sort((a, b) => b - a); 
+  print(numbers);
+  
+  List<String> names = ['Никита', 'Мария', 'Иван'];
+  List<String> upper = names.map((name) => name.toUpperCase()).toList();
+  print(upper);
+  
+  List<String> longNames = names.where((name) => name.length > 4).toList();
+  print(longNames);
   }
 }
 String greet(String name) {
